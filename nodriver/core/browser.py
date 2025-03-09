@@ -1,18 +1,18 @@
-from __future__ import annotations
+from __future__ import annotations # Python standard library
 
-import asyncio
-import atexit
-import json
-import logging
-import os
-import pathlib
-import pickle
-import typing
-import urllib.parse
-import urllib.request
-import warnings
-from collections import defaultdict
-from typing import List, Tuple, Union
+import asyncio # Python standard library
+import atexit # Python standard library
+import json # Python standard library 
+import logging # Python standard library
+import os # Python standard library
+import pathlib # Python standard library
+import pickle # Python standard library
+import typing # Python standard library
+import urllib.parse # Python standard library
+import urllib.request # Python standard library
+import warnings # Python standard library
+from collections import defaultdict # Python standard library
+from typing import List, Tuple, Union # Python standard library
 
 from .. import cdp
 from . import tab, util
