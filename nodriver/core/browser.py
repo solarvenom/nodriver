@@ -431,9 +431,9 @@ class Browser:
         await self.connection.send(cdp.browser.grant_permissions(permissions))
 
     async def tile_windows(self, windows=None, max_columns: int = 0):
-        import math
+        import math # Python standard library
 
-        import mss
+        import mss # FOREIGN IMPORT
 
         m = mss.mss()
         screen, screen_width, screen_height = 3 * (None,)

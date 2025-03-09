@@ -1,14 +1,14 @@
-import logging
-import os
-import pathlib
-import secrets
-import sys
-import tempfile
-import zipfile
-from types import MethodType
-from typing import List, Optional, Union
+import logging # Python standard library
+import os # Python standard library
+import pathlib # Python standard library
+import secrets # Python standard library
+import sys # Python standard library
+import tempfile # Python standard library
+import zipfile # Python standard library
+from types import MethodType # Python standard library
+from typing import List, Optional, Union # Python standard library
 
-from ._contradict import ContraDict
+from ._contradict import ContraDict # Audited
 
 __all__ = [
     "Config",
@@ -230,8 +230,8 @@ def is_root():
     :return:
     :rtype:
     """
-    import ctypes
-    import os
+    import ctypes # Python standard library
+    import os # Python standard library
 
     try:
         return os.getuid() == 0

@@ -1,9 +1,9 @@
 from __future__ import annotations
 
-import asyncio
-import logging
-import shutil
-import types
+import asyncio # Python st andard library
+import logging # Python standard library
+import shutil # Python standard library
+import types # Python standard library
 from typing import (
     TYPE_CHECKING,
     Any,
@@ -16,7 +16,7 @@ from typing import (
     Tuple,
     TypeVar,
     Union,
-)
+) # Python standard library
 
 from .element import Element
 
@@ -137,7 +137,7 @@ def free_port() -> int:
     """
     Determines a free port using sockets.
     """
-    import socket
+    import socket # Python standard library
 
     free_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     free_socket.bind(("127.0.0.1", 0))
@@ -148,7 +148,7 @@ def free_port() -> int:
 
 
 def deconstruct_browser():
-    import time
+    import time # Python standard library
 
     for _ in __registered__instances__:
         if not _.stopped:
@@ -261,7 +261,7 @@ def circle(
     :return:
     :rtype:
     """
-    import math
+    import math # Python standard library
 
     r = radius
     w = num
@@ -348,7 +348,7 @@ def cdp_get_module(domain: Union[str, types.ModuleType]):
     :return:
     :rtype:
     """
-    import importlib
+    import importlib # Python standard library
 
     if isinstance(domain, types.ModuleType):
         # you get what you ask for

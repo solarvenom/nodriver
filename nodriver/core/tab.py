@@ -1,17 +1,17 @@
-from __future__ import annotations
+from __future__ import annotations # Python standard library
 
-import asyncio
-import functools
-import itertools
-import json
-import logging
-import os
-import pathlib
-import secrets
-import typing
-import warnings
-from pathlib import Path
-from typing import Any, Generator, List, Optional, Tuple, TypeVar, Union
+import asyncio # Python standard library
+import functools # Python standard library
+import itertools # Python standard library
+import json # Python standard library
+import logging # Python standard library
+import os # Python standard library
+import pathlib # Python standard library
+import secrets # Python standard library 
+import typing # Python standard library
+import warnings # Python standard library
+from pathlib import Path # Python standard library
+from typing import Any, Generator, List, Optional, Tuple, TypeVar, Union # Python standard library
 
 import nodriver.core.browser
 
@@ -310,7 +310,7 @@ class Tab(Connection):
         return f"http://{self.browser.config.host}:{self.browser.config.port}/devtools/inspector.html?ws={self.websocket_url[5:]}"
 
     def inspector_open(self):
-        import webbrowser
+        import webbrowser # Python standard library
 
         webbrowser.open(self.inspector_url, new=2)
 
@@ -319,7 +319,7 @@ class Tab(Connection):
         opens the system's browser containing the devtools inspector page
         for this tab. could be handy, especially to debug in headless mode.
         """
-        import webbrowser
+        import webbrowser # Python standard library
 
         webbrowser.open(self.inspector_url)
 
@@ -1365,8 +1365,8 @@ class Tab(Connection):
         :rtype: str
         """
         # noqa
-        import datetime
-        import urllib.parse
+        import datetime # Python standard library
+        import urllib.parse # Python standard library
 
         await self.sleep()  # update the target's url
         path = None
@@ -1399,7 +1399,7 @@ class Tab(Connection):
             raise ProtocolException(
                 "could not take screenshot. most possible cause is the page has not finished loading yet."
             )
-        import base64
+        import base64 # Python standard library
 
         data_bytes = base64.b64decode(data)
         if not path:
@@ -1441,7 +1441,7 @@ class Tab(Connection):
         :return: list of urls
         """
 
-        import urllib.parse
+        import urllib.parse # Python standard library
 
         res = []
         all_assets = await self.query_selector_all(selector="a,link,img,script,meta")
@@ -1647,7 +1647,7 @@ class Tab(Connection):
         :rtype:
         """
         try:
-            import cv2
+            import cv2 # FOREIGN IMPORT 
         except ImportError:
             logger.warning(
                 """

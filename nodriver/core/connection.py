@@ -1,16 +1,16 @@
-from __future__ import annotations
+from __future__ import annotations # Python standard library
 
-import asyncio
-import collections
-import functools
-import inspect
-import itertools
-import json
-import logging
-import sys
-import types
-from asyncio import iscoroutine, iscoroutinefunction
-from typing import Any, Awaitable, Callable, Generator, TypeVar, Union
+import asyncio # Python standard library
+import collections # Python standard library
+import functools # Python standard library
+import inspect # Python standard library
+import itertools # Python standard library
+import json # Python standard library
+import logging # Python standard library
+import sys # Python standard library
+import types # Python standard library
+from asyncio import iscoroutine, iscoroutinefunction # Python standard library
+from typing import Any, Awaitable, Callable, Generator, TypeVar, Union # Python standard library
 
 import websockets.asyncio.client
 

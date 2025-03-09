@@ -1,11 +1,11 @@
-from __future__ import annotations
+from __future__ import annotations # Python standard library
 
-import asyncio
-import json
-import logging
-import pathlib
-import secrets
-import typing
+import asyncio # Python standard library
+import json # Python standard library
+import logging # Python standard library
+import pathlib # Python standard library
+import secrets # Python standard library
+import typing # Python standard library
 
 from .. import cdp
 from . import util
@@ -856,9 +856,9 @@ class Element:
         :rtype: str
         """
 
-        import base64
-        import datetime
-        import urllib.parse
+        import base64 # Python standard library
+        import datetime # Python standard library
+        import urllib.parse # Python standard library
 
         pos = await self.get_position()
         if not pos:

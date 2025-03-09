@@ -1,8 +1,8 @@
-import logging
-import re
-import warnings as _warnings
-from collections.abc import Mapping as _Mapping
-from collections.abc import Sequence as _Sequence
+import logging # Python standard library
+import re # Python standard library
+import warnings as _warnings # Python standard library
+from collections.abc import Mapping as _Mapping # Python standard library
+from collections.abc import Sequence as _Sequence # Python standard library
 
 __logger__ = logging.getLogger(__name__)
 
